@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codejam-Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__icon">
+        <div class="header__icon-stick"></div>
+        <div class="header__icon-stick"></div>
+        <div class="header__icon-stick"></div>
+      </div>
+      <h1 class="header__h1">CodeJam - Pallete</h1>
+      <div class="header__dots">
+        <div class="header__dots-dot"></div>
+        <div class="header__dots-dot"></div>
+        <div class="header__dots-dot"></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="menu">
+        <div class="tools">
+          <div class="tools__tool">
+            <img
+              src="./assets/paint-bucket.svg"
+              alt="paint bucket"
+              class="tools__tool-img"
+            />
+            <p class="tools__tool-p">Paint bucket</p>
+          </div>
+          <div class="tools__tool">
+            <img
+              src="./assets/color-picker.svg"
+              alt="color picker"
+              class="tools__tool-img"
+            />
+            <p class="tools__tool-p">Choose color</p>
+          </div>
+          <div class="tools__tool">
+            <img src="./assets/move.svg" alt="move" class="tools__tool-img" />
+            <p class="tools__tool-p">Move</p>
+          </div>
+          <div class="tools__tool">
+            <img
+              src="./assets/transform.svg"
+              alt="transform"
+              class="tools__tool-img"
+            />
+            <p class="tools__tool-p">Transform</p>
+          </div>
+        </div>
+        <div class="colors">
+          <div class="colors__color">
+            <div class="colors__color-circle current-color"></div>
+            <p class="colors__color-p">Current color</p>
+          </div>
+          <div class="colors__color">
+            <div class="colors__color-circle prev-color"></div>
+            <p class="colors__color-p">Prev color</p>
+          </div>
+          <div class="colors__color">
+            <div class="colors__color-circle red"></div>
+            <p class="colors__color-p">red</p>
+          </div>
+          <div class="colors__color">
+            <div class="colors__color-circle blue"></div>
+            <p class="colors__color-p">blue</p>
+          </div>
+        </div>
+      </section>
+      <canvas class="canvas">Your browser doesn't support canvas</canvas>
+      <section class="switcher">
+        <div class="switcher__option">
+          <div class="switcher__option-square"></div>
+          <p class="switcher__option-p">4x4</p>
+        </div>
+        <div class="switcher__option">
+          <div class="switcher__option-square"></div>
+          <p class="switcher__option-p">32x32</p>
+        </div>
+        <div class="switcher__option">
+          <div class="switcher__option-square"></div>
+          <p class="switcher__option-p">256x256</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
