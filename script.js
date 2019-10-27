@@ -38,6 +38,12 @@ const firstPic = [
   ["00BCD4", "FFEB3B", "FFEB3B", "00BCD4"]
 ];
 
+secondPic.forEach(row => {
+  row.forEach(cell => {
+    cell[3] /= 255;
+  });
+});
+
 function drawCanvas(size) {
   var canvas = document.querySelector(".canvas");
   canvas.width = 512;
@@ -52,6 +58,20 @@ function drawCanvas(size) {
       firstPic.forEach((row, idxRow) => {
         row.forEach((cell, idxCol) => {
           ctx.fillStyle = "#" + cell;
+          ctx.fillRect(
+            cellWidth * idxCol,
+            cellHeight * idxRow,
+            cellWidth,
+            cellHeight
+          );
+        });
+      });
+      break;
+
+    case 32:
+      secondPic.forEach((row, idxRow) => {
+        row.forEach((cell, idxCol) => {
+          ctx.fillStyle = `rgba(${cell})`;
           ctx.fillRect(
             cellWidth * idxCol,
             cellHeight * idxRow,
