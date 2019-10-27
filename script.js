@@ -46,7 +46,7 @@ function drawCanvas(size) {
   var ctx = canvas.getContext("2d"),
     cellWidth = Math.round(canvas.width / size),
     cellHeight = Math.round(canvas.height / size);
-    
+
   switch (size) {
     case 4:
       firstPic.forEach((row, idxRow) => {
@@ -60,6 +60,14 @@ function drawCanvas(size) {
           );
         });
       });
+      break;
+
+    case 256:
+      var pic = new Image();
+      pic.onload = function() {
+        ctx.drawImage(pic, 0, 0, canvas.width, canvas.height);
+      };
+      pic.src = "./assets/image.png";
       break;
   }
 }
