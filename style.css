@@ -27,7 +27,7 @@
   background: rgba(0, 0, 0, 0.54);
 }
 
-.header__h1 {
+.header__title {
   width: calc(100% - 4px - 18px - 19px - 4px - 60px);
 
   font-family: "Roboto", sans-serif;
@@ -78,12 +78,12 @@
   cursor: pointer;
 }
 
-.tools__tool-img {
+.tools__tool-icon {
   width: 20px;
   margin: 0 35px 0 20px;
 }
 
-.tools__tool-p {
+.tools__tool-name {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -132,7 +132,7 @@
   background: #41b6f7;
 }
 
-.colors__color-p {
+.colors__color-name {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -163,7 +163,7 @@
   cursor: pointer;
 }
 
-.active-div {
+.active-size {
   background: rgba(0, 0, 0, 0.141327);
 }
 
